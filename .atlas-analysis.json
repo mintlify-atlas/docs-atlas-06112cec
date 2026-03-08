@@ -1,0 +1,127 @@
+{
+  "projectType": "saas",
+  "projectName": "IdentityPilot Control Center",
+  "projectDescription": "Comprehensive identity and access management platform integrating Zitadel, Firezone, and Pomerium for seamless user provisioning and zero-trust network access.",
+  "theme": "aspen",
+  "primaryColor": "#8727fc",
+  "lightColor": "#8c51fc",
+  "darkColor": "#0c040c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "architecture"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/authentication",
+              "features/zero-trust-access",
+              "features/client-provisioning",
+              "features/jit-access",
+              "features/timeline-audit"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/zitadel",
+              "integrations/firezone",
+              "integrations/pomerium",
+              "integrations/supabase"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/prerequisites",
+              "deployment/docker-setup",
+              "deployment/environment-variables",
+              "deployment/production-guide"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/client-setup",
+              "guides/user-management",
+              "guides/access-policies",
+              "guides/firezone-client-build",
+              "guides/migration-from-tailscale"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Edge Functions",
+            "pages": [
+              "api/zitadel-api",
+              "api/firezone-api",
+              "api/client-provisioning",
+              "api/access-management"
+            ]
+          },
+          {
+            "group": "Database",
+            "pages": [
+              "api/database-schema",
+              "api/migrations"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Security",
+        "groups": [
+          {
+            "group": "Zero Trust",
+            "pages": [
+              "security/overview",
+              "security/authentication",
+              "security/network-access",
+              "security/policy-management"
+            ]
+          },
+          {
+            "group": "Best Practices",
+            "pages": [
+              "security/production-checklist",
+              "security/backup-restore",
+              "security/monitoring"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Zitadel OIDC authentication with PKCE flow",
+    "Firezone zero-trust network access with WireGuard VPN",
+    "Automated client provisioning workflow",
+    "Just-in-time (JIT) access with automatic expiration",
+    "Comprehensive timeline and audit trail",
+    "Pomerium identity-aware proxy integration",
+    "Docker-based deployment with Supabase backend",
+    "Multi-device management and policy enforcement"
+  ],
+  "publicApiSurface": [
+    "zitadel-api (Edge Function)",
+    "firezone-api (Edge Function)",
+    "client-provisioning (Edge Function)",
+    "access-request (Edge Function)",
+    "access-approval (Edge Function)",
+    "access-revocation (Edge Function)",
+    "access-scheduler (Edge Function)",
+    "webauthn (Edge Function)"
+  ]
+}
